@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ApplicationConfig } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +9,11 @@ import { ApplicationConfig } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'hello-world-2201561004';
+  name: string = 'Владимир Савов';
+  age: number = 20;
+  city: string = 'град Септември';
+  hobies: string[] = ['карам велосипед', 'да се разхождам в планината'];
+  creatorChannel: string = 'https://www.youtube.com/@MrBeast';
+  myChannel: string = 'https://www.youtube.com/channel/UCVqVJmaYJlGO1q_rs-9srsg';
+  game: string = 'мобилна игра';
 }
-
-export const appConfig: ApplicationConfig = {
-  providers: []
-};
